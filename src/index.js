@@ -1,5 +1,6 @@
-const data = require('./data.json');
-const secondData = require('./second-data.json');
+import data from './data.json';
+
+import secondData from './second-data.json';
 
 const dataElement = document.querySelector('#dataName');
 const secondDataElement = document.querySelector('#secondDataName');
