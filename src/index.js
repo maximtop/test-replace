@@ -1,9 +1,19 @@
-import data from './data.json';
+const data = 'data.json';
+const secondData = 'data.json';
 
-import secondData from './second-data.json';
+const updateData = async() => {
+  const response = await fetch(data);
+  console.log(response.json());
 
-const dataElement = document.querySelector('#dataName');
-const secondDataElement = document.querySelector('#secondDataName');
+  const response2 = await fetch(secondData);
+  console.log(response2.json());
+};
 
-dataElement.textContent = JSON.stringify(data);
-secondDataElement.textContent = JSON.stringify(secondData);
+updateData();
+
+
+// const dataElement = document.querySelector('#dataName');
+// const secondDataElement = document.querySelector('#secondDataName');
+//
+// dataElement.textContent = JSON.stringify(data);
+// secondDataElement.textContent = JSON.stringify(secondData);
